@@ -63,6 +63,8 @@ function showProjectDiv() {
    
 }
 
+
+
 function showAboutDiv() {
     if ($('#infoDiv').css('display') == "none") {
         showInfoDiv();
