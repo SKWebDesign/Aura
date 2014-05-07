@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foundation</title>
+  <link rel="stylesheet" href="css/app.css" />
+  <script src="bower_components/modernizr/modernizr.js"></script>
+</head> 
+<body>
+
+   <div class="fixed">
+
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="" >AURA Homes</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li><a href="#" onclick="showProjectDiv()">Projects</a></li>
+          <li><a href="#" onclick="showAboutDiv()">About US</a></li>
+          <li><a href="#" onclick="showContactDiv()">Contact US</a></li>
+          <li><a href="#" onclick="showInfoDiv()">Register</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+
+
+
+
+  <div class="row full">
+    <div id="infoDiv" class="small-12 large-12 columns hide">
+
+      <div id="AboutDiv" class="left large-6 columns panel hide">
+        <h3>About US</h3>
+        <p>
+          Lorem Ipsum12 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+          but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+          Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <a class="infoDiv-close" href="#" onclick="hideInfoDiv(); "></a>
+      </div>
+
+
+
+      <div id="ContactDiv" class="left large-6 columns panel hide">
+
+        <h3>Contact US</h3>
+        <p>
+          Lorem Ipsum12 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+          but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+          Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <a class="infoDiv-close" href="#" onclick="hideInfoDiv(); "></a>
+
+      </div>
+
+
+    </div>
+
+    <div id="ProjectDiv" class="large-12 columns hide">
+    
+
+    </div>
+
+
+
+
+ 
+  <div id="bottomNav" class="hide" >
+ <a class="navInfoDiv-hide" href="#" onclick="ToogleNavInfoDiv();"></a>
+    <ul class="breadcrumbs">
+      <li><a href="#">link1</a></li>
+      <li><a href="#">link2</a></li>
+      <li><a href="#">link3</a></li>
+      <li><a href="#">link4</a></li>
+    </ul>
+ 
+    <div id="navInfoDiv" >
+      
+       <div  id="thumbnialesDiv" class="large-12 columns"> 
+           
+             
+       </div>
+     
+    </div>
+  </div>
+ 
+  </div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
+<script src="bower_components/foundation/js/foundation/foundation.orbit.js"></script>
+<script src="bower_components/foundation/js/foundation/foundation.tooltip.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

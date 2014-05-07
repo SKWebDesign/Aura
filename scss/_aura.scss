@@ -1,0 +1,197 @@
+body {
+  
+   background:url('http://placehold.it/1920x1080&text=[Background%20Image1]') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+   
+}
+
+.full
+{
+	width:100%;
+	height:100%;
+	margin-left: auto;
+   	margin-right: auto;
+  	max-width: inherit;
+
+    
+}
+
+
+
+
+
+
+#infoDiv
+{
+    position:relative;
+	top:4.5rem;
+   
+
+}
+
+.navInfoDiv-hide
+{
+    position: absolute;
+    top: 0.2rem;
+    right: 0.5rem;
+    cursor:pointer;
+    color: #fff;
+    border: 1px solid #AEAEAE;
+    border-radius: 30px;
+    background: #605F61;
+    font-size: 31px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 0px;
+    padding: 11px 11px; 
+}
+.navInfoDiv-hide:before {
+    content: "";
+}
+
+
+.infoDiv-close
+{
+	position: absolute;
+    top: -0.5rem;
+    right: -0.6875rem;
+    cursor:pointer;
+    color: #fff;
+    border: 1px solid #AEAEAE;
+    border-radius: 30px;
+    background: #605F61;
+    font-size: 31px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 0px;
+    padding: 11px 3px;  
+}
+
+
+
+.infoDiv-close:before {
+    content: "×";
+}
+
+
+
+.ProjectDiv-close
+{
+	float:right;
+    margin-top:-22.5rem;
+    margin-right:-30px;
+    cursor:pointer;
+    color: #fff;
+    border: 1px solid #AEAEAE;
+    border-radius: 30px;
+    background: #605F61;
+    font-size: 31px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 0px;
+    padding: 11px 3px;  
+}
+
+
+
+.ProjectDiv-close:before {
+    content: "×";
+}
+#ProjectDiv {
+    height:100%;
+    width:100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.th
+{
+
+    height:11.5rem;
+    width:11.5rem;
+
+}
+
+.breadcrumbs
+{
+ 
+    width:100%;
+    margin-bottom:0px;
+}
+
+#imageOrbit img {
+  width:100%; 
+  height:auto;
+}
+
+
+.orbit-container {
+    height:100%;
+    width: 100%;
+}
+
+
+/* this is the big trick*/
+#bottomNav:before {
+    content:'';
+    float: left;
+    height: 100%;
+}
+
+
+
+#bottomNav
+{
+	
+	 position: absolute;
+    top:70%;
+    width:100%;
+   
+   
+
+}
+
+
+#navInfoDiv {
+
+       opacity: .5;
+       background-color: white;
+}
+/* this is the big trick*/
+#navInfoDiv:after {
+    content:'';
+    display: block;
+    clear: both;
+ 
+}
+
+#navInfoDiv img
+{
+    max-width:100%;
+    height:auto;
+}
+
+
+#navInfoDiv .th
+{
+    width:100px;
+    height:100px;
+}
+
+#thumbnialesDiv
+{
+    margin-top:1.5rem;
+}
+
+
+ .large-block-grid-24 > li {
+    width: 4.16666%;
+    list-style: none; }
+    .large-block-grid-24 > li:nth-of-type(n) {
+      clear: none; }
+    .large-block-grid-24 > li:nth-of-type(24n+1) {
+      clear: both; } 
