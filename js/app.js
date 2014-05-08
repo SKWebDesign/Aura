@@ -171,7 +171,6 @@ function ToogleNavInfoDiv()
 {
     if($('#navInfoDiv').css('display') == "none")   
     {
-          $('#bottomNav').css('top', '70%');
          
          $('#navInfoDiv').slideDown()
              
@@ -182,7 +181,7 @@ function ToogleNavInfoDiv()
     {
        $('#navInfoDiv').slideUp( "slow", function() {
          
-            $('#bottomNav').css('top', '90%');  
+            
         });
    
     }

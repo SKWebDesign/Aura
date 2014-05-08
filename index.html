@@ -21,8 +21,8 @@
       <section class="top-bar-section">
         <ul class="right">
           <li><a href="#" onclick="showProjectDiv()">Projects</a></li>
-          <li><a href="#" onclick="showAboutDiv()">About US</a></li>
-          <li><a href="#" onclick="showContactDiv()">Contact US</a></li>
+          <li><a href="#" data-reveal-id="AboutUsModel">About US</a></li>
+          <li><a href="#" data-reveal-id="ContactUsModel">Contact US</a></li>
           <li><a href="#" onclick="showInfoDiv()">Register</a></li>
         </ul>
       </section>
@@ -33,7 +33,29 @@
 
 
   <div class="row full">
+   <div id="AboutUsModel" class="reveal-modal medium" data-reveal>
+        <h3>About US</h3>
+        <p>
+          Lorem Ipsum12 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+          but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+          Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+     <div id="ContactUsModel" class="reveal-modal medium" data-reveal>
+        <h3>Contact US</h3>
+        <p>
+          Lorem Ipsum12 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+          but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+          Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
     <div id="infoDiv" class="small-12 large-12 columns hide">
+      
 
       <div id="AboutDiv" class="left large-6 columns panel hide">
         <h3>About US</h3>
