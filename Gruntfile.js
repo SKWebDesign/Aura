@@ -39,9 +39,31 @@ module.exports = function(grunt) {
         dest: 'images/optimized/'                  
       }]
     }
+  }, 
+
+  connect: {
+    server: {
+      options: {
+        port: 9001,
+        hostname: 'localhost',
+        keepalive:true,
+        livereload: true
+
+      }
+    }
   },
-    
+  
+  open: {
+      dev : {
+          path: 'http://127.0.0.1:9001/index.html',
+          app: 'chrome'
+    }
+  },
+
+
     watch: {
+     
+
       grunt: { files: ['Gruntfile.js'] },
 
       sass: {
@@ -52,6 +74,16 @@ module.exports = function(grunt) {
       uglify: {
         files: 'js/app.js',
         tasks: ['uglify']
+      },
+
+      html: {
+          files: ['*.html','js/build/*.min.js'],
+           options: {
+         livereload: 
+         {
+            port:35729
+         }
+        }     
       }
     }
   });
@@ -60,7 +92,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-open');
 
   grunt.registerTask('build', ['sass','uglify','imagemin']);
   grunt.registerTask('default', ['build','watch']);
+  grunt.registerTask('server', ['open:dev','connect']);
 }

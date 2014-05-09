@@ -109,15 +109,6 @@ body {
     position: absolute;
     bottom:42px;
     width:100%;
-
-    :before 
-    {
-        content:'';
-        float: left;
-        height: 100%;
-    }
-
-
 }
 
 
@@ -128,6 +119,7 @@ body {
 
     opacity: .5;
     background-color: white;
+    overflow: hidden;
     img
     {
         max-width:100%;

@@ -1,9 +1,9 @@
-.reveal-modal.medium.trans {
+.contactPanel {
 	background:#7f7f7f;
 	background:rgba(0,0,0,0.5);
-	color: #ffffff;
+	color: #fff;
 } 
 
-.reveal-modal.medium.trans h3{
-	color: #ffffff;
+.contactPanel h3{
+	color: #fff;
 } 
