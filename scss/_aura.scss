@@ -19,7 +19,7 @@ body {
 
 
 }
-
+ 
 
 #infoDiv
 {
@@ -68,13 +68,13 @@ body {
     top: -0.5rem;
     right: -0.6875rem;
     padding: 11px 3px;  
-}
 
-
-
-.infoDiv-close:before {
+    :before {
     content: "×";
+    }
 }
+
+
 
 .th
 {
@@ -109,21 +109,25 @@ body {
     position: absolute;
     bottom:42px;
     width:100%;
-   
 
-}
-
-#bottomNav:before 
-{
+    :before 
+    {
         content:'';
         float: left;
         height: 100%;
+    }
+
+
 }
+
+
 
 
 
 #navInfoDiv {
 
+    opacity: .5;
+    background-color: white;
     img
     {
         max-width:100%;
@@ -135,21 +139,15 @@ body {
         width:100px;
         height:100px;
     } 
-    
-}
-#navInfoDiv:after {
+    :after {
         content:'';
         display: block;
         clear: both;
 
     }
-
-#navInfoDiv
-{
-
-    opacity: .5;
-    background-color: white;
+    
 }
+
 
 
 

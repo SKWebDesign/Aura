@@ -13,7 +13,7 @@ for (i = 0; i < bgimages.length; i++) {
     pathToImg[i] = new Image()
     pathToImg[i].src = bgimages[i]
 }
-
+ 
 var inc = -1
 
 function bgSlide() {
