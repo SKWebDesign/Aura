@@ -83,7 +83,7 @@ h1
 	overflow: hidden;
 	display:inline-block;
 	margin: 0 auto;
-	padding-bottom: 5px;
+
     width: 100%;
 
 }
@@ -154,7 +154,7 @@ and (max-width : 480px) {
 	#subnav ul li
 	{
 		font-size:0.8em;
-		margin: 15px 1% 5px 1%;
+		padding: 12px 1% 12px 1%;
 	}
 
 	h1
@@ -180,6 +180,22 @@ and (min-width : 321px) {
 @media only screen 
 and (max-width : 320px) {
 /* Styles */
+#subnav ul li
+	{
+		font-size:0.8em;
+		padding: 15px 0% 12px 0%;
+	}
+
+	h1
+	{
+		font-size: 2em;
+	}
+
+	p
+	{
+		font-size: 0.9em;
+	}
+
 }
 
 /* iPads (portrait and landscape) ----------- */
