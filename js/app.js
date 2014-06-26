@@ -223,36 +223,36 @@ function setSubNav()
 			 //set subnav to be fixed at top
 			 $("#subnav").addClass("is_stuck");
 			 $("span.arrow").css("opacity","1");
-				
+			
 			 //set arrow position
-			 if($(window).scrollTop()>=$("div#aurahome").position().top && $(window).scrollTop()<$("div#difference").position().top-90) 
+			 if($(window).scrollTop()>=$("div#aurahome").position().top && $(window).scrollTop()<$("div#difference").position().top-135) 
 			 {
 					 //set why aura position
 
-						var left = $("#subnav ul li:nth-child(1)").position().left +$("#subnav ul li:nth-child(1)").width()/2
+						var left = $("#subnav ul li:nth-child(1)").position().left +$("#subnav ul li:nth-child(1)").width()*2/3
 					 $("span.arrow").css("left",left);
 			 }
-			 if($(window).scrollTop()>=$("div#difference").position().top && $(window).scrollTop()<$("div#commitment").position().top-90) 
+			 if($(window).scrollTop()>=$("div#difference").position().top-135 && $(window).scrollTop()<$("div#commitment").position().top-135) 
 			 {
 					 //set why aura position
 
-						var left = $("#subnav ul li:nth-child(2)").position().left +$("#subnav ul li:nth-child(2)").width()/2
+						var left = $("#subnav ul li:nth-child(2)").position().left +$("#subnav ul li:nth-child(2)").width()*2/3
 					 
 					 $("span.arrow").css("left",left);
 			 }
-				if($(window).scrollTop()>=$("div#commitment").position().top && $(window).scrollTop()<$("div#communities").position().top-90) 
+				if($(window).scrollTop()>=$("div#commitment").position().top-135 && $(window).scrollTop()<$("div#communities").position().top-135) 
 			 {
 					 //set why aura position
 
-						var left = $("#subnav ul li:nth-child(3)").position().left +$("#subnav ul li:nth-child(3)").width()/2
+						var left = $("#subnav ul li:nth-child(3)").position().left +$("#subnav ul li:nth-child(3)").width()*2/3
 					 
 					 $("span.arrow").css("left",left);
 			 }
-				if($(window).scrollTop()>=$("div#communities").position().top) 
+				if($(window).scrollTop()>=$("div#communities").position().top-135) 
 			 {
 					 //set why aura position
 
-						var left = $("#subnav ul li:nth-child(4)").position().left +$("#subnav ul li:nth-child(4)").width()/2
+						var left = $("#subnav ul li:nth-child(4)").position().left +$("#subnav ul li:nth-child(4)").width()*2/3
 					 
 					 $("span.arrow").css("left",left);
 			 }
