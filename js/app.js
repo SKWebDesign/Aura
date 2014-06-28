@@ -134,6 +134,12 @@ projectImages[3] = 'http://placehold.it/1920x1080&text=[Img4]';
 projectImages[4] = 'http://placehold.it/1920x1080&text=[Img5]';
 projectImages[5] = 'http://placehold.it/1920x1080&text=[Img6]';
 projectImages[6] = 'http://placehold.it/1920x1080&text=[Img7]';
+projectImages[7] = 'http://placehold.it/1920x1080&text=[Img8]';
+projectImages[8] = 'http://placehold.it/1920x1080&text=[Img9]';
+projectImages[9] = 'http://placehold.it/1920x1080&text=[Img10]';
+projectImages[10] = 'http://placehold.it/1920x1080&text=[Img11]';
+projectImages[11] = 'http://placehold.it/1920x1080&text=[Img12]';
+
 function addOrbitImages()
 {
     $('#ProjectDiv').empty();
@@ -153,7 +159,7 @@ function addOrbitImages()
 function addOrbitImageThumbnails()
 {
     $('#thumbnialesDiv').empty();
-    var html= '<ul class="small-block-grid-3 medium-block-grid-6 large-block-grid-12">';
+    var html= '<ul class="small-block-grid-4 medium-block-grid-8 large-block-grid-12">';
      
 
      for(var i=0; i< projectImages.length; i++)
