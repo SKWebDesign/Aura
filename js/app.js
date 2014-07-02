@@ -48,6 +48,8 @@ $(document).ready(function()
 			setSubNav();
 };
 
+
+
 });
 
  
@@ -57,25 +59,43 @@ function showInfoDiv() {
 }
 
 function showProjectDiv() {
-		if ($('#infoDiv').css('display') == "none")
-		{
-				showInfoDiv();
-		}
-		else
-		{
-				hideAboutDiv();
-				hideContactDiv();
-		}
+		$('#projects').removeClass("hide");
+			$('#home').addClass("hide");
+		$(".project-imglist").slick(
+{
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+}
 
-		 addOrbitImages();
-		addOrbitImageThumbnails();
-		$('#ProjectDiv').show();
-		$('#bottomNav').show();
-		
-
-		$(document).foundation('orbit');
-		resizeOrbitImages();
-
+			);
 	 
 }
 
@@ -213,12 +233,12 @@ function resizeImgContainer()
 		var ViewPortHeight= $(window).height();
 		 var ViewPortWidth= $(window).width();
 
-		 $("#img-container").height(ViewPortHeight - 90);
+		 $("#img-container").height(ViewPortHeight - 45);
 }
 
 function setSubNav()
 {
-		if($(window).scrollTop()>=($("div.wrapper").position().top-45))
+		if($(window).scrollTop()>=($("div.wrapper").position().top-90))
 		{
 			 //set subnav to be fixed at top
 			 $("#subnav").addClass("is_stuck");

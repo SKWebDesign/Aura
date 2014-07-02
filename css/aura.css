@@ -55,6 +55,7 @@ h1
 {
 	display:none !important;
 }
+
 #subnav
 {
 	position: absolute;
@@ -67,6 +68,32 @@ h1
 
  }
 
+
+#projects
+{
+	position: absolute;
+	background: none;
+	top:45px;
+	width: 100%;
+}
+
+#projects .row
+{
+	background: none;
+}
+
+ #projectnav
+{
+	position: absolute;
+    top: 0px;
+	width: 100%;
+	z-index: 99;
+	text-align: center;
+	background: #ecf0f1;
+	height: 45px;
+
+}
+
  #subnav.is_stuck
 {
 	position: fixed;
@@ -77,7 +104,7 @@ h1
 	
  }
 
-#subnav ul
+#subnav ul,  #projectnav ul
 {
 	list-style: none;
 	overflow: hidden;
@@ -88,18 +115,18 @@ h1
 
 }
 
-#subnav ul li
+#subnav ul li, #projectnav ul li
 {
 	display:inline-block;
     padding: 10px 2% 10px 2%;
 }
 
-#subnav ul li:hover
+#subnav ul li:hover, #projectnav ul li:hover
 {
 	background-color:#949599;
 }
 
-#subnav ul li a
+#subnav ul li a, #projectnav ul li a
 {
 
     color: #2c3e50;
@@ -143,6 +170,8 @@ h1
 	background-color: #fff;
 	   width: 100px;
 }
+
+
 
 
 
